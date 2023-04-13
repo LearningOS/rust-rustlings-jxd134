@@ -43,6 +43,7 @@ fn main() {
 
     let earth = Planet::Earth(Rc::clone(&sun));
     println!("reference count = {}", Rc::strong_count(&sun)); // 4 references
+
     earth.details();
 
     let mars = Planet::Mars(Rc::clone(&sun));
